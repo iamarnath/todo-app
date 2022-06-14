@@ -1,0 +1,114 @@
+.container {
+  width: 60%;
+  height: 40%;
+  background: white;
+  margin-left: 15%;
+}
+
+.header {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.btn {
+  background: #9d3dc7;
+  color: #fff;
+  border-radius: 8px;
+  border-color: #9d3dc7;
+}
+
+.table .table-header,
+.table .table-body {
+  display: flex;
+  flex-direction: row;
+}
+.edit-icon {
+  width: 10px;
+  height: 10px;
+}
+.square-icon {
+  width: 5px;
+  height: 5px;
+}
+.square {
+  height: 5px;
+  width: 5px;
+  background-color: #9d3dc7;
+}
+
+.table-header > div,
+.table-body > div {
+  padding: 15px;
+  border-bottom: 2px solid #efeded;
+}
+.header-label,.footer {
+  color: #7f7f7f;
+  font-size: 10px;
+}
+.data-label {
+  font-size: 12px;
+}
+.priority-red p {
+  background:#f4e4e4;
+  color: red;
+
+}
+.priority-green p{
+    background:rgb(211, 239, 211);
+    color:green;
+
+}
+.priority-blue p{
+    background:rgb(201, 201, 240);
+    color:blue;
+}
+.priority-red p,.priority-green p,.priority-blue p {
+    display: inline-flex;
+    margin: 0;
+    padding: 0 5px 0 5px;
+}
+.footer{
+    display: flex;
+    justify-content: flex-end;
+    height: 50px;
+    align-items: center;
+    padding-right: 20px;
+}
+.col-1 {
+  flex: 0 0 8.3333%;
+}
+.col-2 {
+  flex: 0 0 16.6666%;
+}
+.col-3 {
+  flex: 0 0 25%;
+}
+.col-4 {
+  flex: 0 0 33.3333%;
+}
+.col-5 {
+  flex: 0 0 41.6666%;
+}
+.col-6 {
+  flex: 0 0 50%;
+}
+.col-7 {
+  flex: 0 0 58.3333%;
+}
+.col-8 {
+  flex: 0 0 66.6666%;
+}
+.col-9 {
+  flex: 0 0 75%;
+}
+.col-10 {
+  flex: 0 0 83.3333%;
+}
+.col-11 {
+  flex: 0 0 91.6666%;
+}
+.col-12 {
+  flex: 0 0 100%;
+}

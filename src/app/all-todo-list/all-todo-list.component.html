@@ -1,0 +1,48 @@
+<div class="container">
+  <div class="header">
+    <div>All todos</div>
+    <div>
+      <button class="btn">+ Add</button>
+    </div>
+  </div>
+  <div class="table">
+    <div class="table-header header-label">
+      <div class="col-1"></div>
+      <div class="col-2">Todo</div>
+      <div class="col-1">Priority</div>
+      <div class="col-2">Due Date</div>
+      <div class="col-1">Created By</div>
+      <div class="col-1">Assigned To</div>
+      <div class="col-2">Actor</div>
+    </div>
+
+    <div class="table-body data-label" *ngFor="let list of todoList">
+      <div class="col-1">
+        <div class="square"></div>
+      </div>
+      <div class="col-2">{{ list.todo }}</div>
+      <div class="col-1" [ngClass]="{'priority-red': list.priority === 'High', 
+      'priority-green': list.priority === 'Medium', 
+      'priority-blue': list.priority === 'Low'}">
+        <p>
+          {{ list.priority }}
+        </p>
+      </div>
+      <div class="col-2">{{ list.dueDate }}</div>
+      <div class="col-1">
+        <img alt="edit" class="edit-icon" src="assets/images/user.svg" />
+      </div>
+      <div class="col-1">
+        <img alt="edit" class="edit-icon" src="assets/images/user.svg" />
+      </div>
+      <div class="col-2">
+        Edit <img alt="edit" class="edit-icon" src="assets/images/edit.svg" />
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+  <div>
+    &#60; Showing 1 - {{todoList.length}} (of {{todoList.length}} items) &#62;
+  </div>
+  </footer>
+</div>
